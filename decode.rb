@@ -30,3 +30,9 @@ MORSE_CODE = {
 def decode_char(morse_char)
   MORSE_CODE[morse_char]
 end
+
+def decode_word(morse_word)
+  morse_chars = morse_word.split(" ")
+  decoded_chars = morse_chars.map { |char| decode_char(char) }
+  decoded_chars.join("")
+end
