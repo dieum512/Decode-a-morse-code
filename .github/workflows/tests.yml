@@ -1,4 +1,8 @@
-name: Testson: pull_requestjobs:
+name: Tests
+
+on: pull_request
+
+jobs:
   rspec:
     name: RSpec
     runs-on: ubuntu-22.04
